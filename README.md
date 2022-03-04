@@ -2,5 +2,6 @@
 
 Team Members:
 
--Zachary Kent
--Ronnie Jackson
+-Zachary Kent <br> <!-- <br> for a break, seems this file uses HTML rules -->
+-Ronnie Jackson <br>
+-Christopher Andrews <br>

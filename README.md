@@ -6,6 +6,7 @@ Team Members:
 -Ronnie Jackson <br>
 -Christopher Andrews <br>
 -Joseph Cooper <br>
+-Terrell McIllwain <br>
 <br><br>
 
 --------------------------------------------

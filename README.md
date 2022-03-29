@@ -10,10 +10,4 @@ Team Members:
 <br><br>
 
 --------------------------------------------
-NOTE: Milestone Reports will be numbered upward beginning from 1.
-
-<br><br>
-
------------------------
-TO DO: Complete clean data sets & noisy data sets. Then, construct a simple neural net to find the best accuracy with just the clean data set for now. We will<br>
-compare systems at a later point.
+TO DO: Continue constructing simple neural nets to find the best accuracy/capability to go forward with a model.<br>

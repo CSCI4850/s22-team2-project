@@ -1,11 +1,11 @@
 # s22-team2-project
 
 <h3 align="center"><b>Team Members:</b></h3>
-<p align="center">-Zachary Kent <br> <!-- <br> for a break, seems this file uses HTML rules -->
--Ronnie Jackson <br>
--Christopher Andrews <br>
--Joseph Cooper <br>
--Terrell McIllwain <br></p>
+<p align="center">Christopher Andrews<br>
+Joseph Cooper<br>
+Ronnie Jackson<br>
+Terrell McIllwain<br>
+Zachary Kent</p>
 <br><br>
 
 --------------------------------------------

@@ -12,7 +12,7 @@ Team Members:
 --------------------------------------------
 <h2 align="center"><b>DEMO DRAFT</b></h2><br>
 <br>
-<center><b>Parts of Network</b></center><br>
+<h1 align="center"><b>Parts of Network</b></h1><br>
 The purpose of this network is to be able to give the system a picture of a Magic the Gathering (MtG) card and then have the system the
 name of the card to the user. To accomplish this, we have set up several parts to create the current version of the system to do this task.<br>
 <br>

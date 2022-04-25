@@ -15,16 +15,14 @@ name of the card to the user. To accomplish this, we have set up several parts t
 
 <h3 align="center"><b>Parts of Network</b></h3>
 
-<b><i>Data File:</i></b> The first part needed is a data file containing over 30,000 unique MtG cards. Every entry has the given card's name, the set that card was
+<b><i>Card File:</i></b> This data file contains over 30,000 unique MtG cards. Each entry has the given card's name, the set that card was
 released in, the 'collector-number,' and finally the file name of which the given picture shows the card's clean image.<br>
 <br>
-<b><i>Real Life Set: </i></b>Finally, the last part of the network that will be used is a group of 600 real life images of MtG cards with widely varying levels of 'noise'
-within the background. Many of these images are also crooked, sideways, or upside down so that both the image reader and the card finder
-can be used in tangent with one another.<br>
+<b><i>Real Life Data File: </i></b>A secondary data file containing about 600 images of MtG cards taken with widely varying levels of 'noise'
+within the background. Many of these images are also crooked, sideways, or upside down.<br>
 <br>
-<b><i>Image Reader: </i></b>The next part is the beginning neural net; the image reader. This first neural net will take a given image and adjust it to not only be
-straightened out, but also take the image within the MtG card and pass both forward.<br>
+<b><i>Image Reader: </i></b>The initial part of the beginning neural net. This neural net will take a given image and adjust it to be as
+straight as possible to help the second neural network read it more clearly.<br>
 <br>
-<b><i>Card Finder: </i></b>Then, there is the second neural net; the card finder. The card finder which will take an image once it has passed through the image
-reader and then determine what the title of the MtG card is by the image on the center of the card.<br>
+<b><i>Card Finder: </i></b>The second and final neural network within the system. The card finder will take an image given and determine what the title of the MtG card is both by the characters it can read on the label and the image on the center of the card.<br>
 <br>

@@ -29,8 +29,7 @@ released in, the 'collector-number,' and finally the file name of which the give
 <b><i>Real Life Data File: </i></b>A secondary data file containing about 600 images of MtG cards taken with widely varying levels of 'noise'
 within the background. Many of these images are also crooked, sideways, or upside down.<br>
 <br>
-<b><i>Image Reader: </i></b>The initial part of the beginning neural net. This neural net will take a given image and adjust it to be as
-straight as possible to help the second neural network read it more clearly.<br>
+<b><i>Image Reader: </i></b>This program takes a real life image and using cv2 contour lines will extract the card from the real world image and resize it for the reading Neural net.<br>
 <br>
 <b><i>Card Finder: </i></b>The second and final neural network within the system. The card finder will take an image given and determine what the title of the MtG card is both by the characters it can read on the label and the image on the center of the card.<br>
 

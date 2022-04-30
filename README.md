@@ -17,7 +17,9 @@ Firstly, while the team tested and built parts of the system outside of Jupyterh
 
 Also, just in case, if you do not have a version of Python3 installed, it may be best to do so as well. Higher Python3's would be advised, such as something above 3.5. This link can prove helpful: https://python.org/downloads/.
 
-Finally, once you have JupytrHub as well as Python prepared, there is one last thing needed to get this system to function. Using the terminal, you will want to type 'pip install opencv-python' and then hit enter. Upon doing so, JupytrHub will begin installing the neccessary parts that our system needs to function. You will know it has finished when the words 'Successfully installed' appear at the beginning of a line of text after running the command.
+Finally, once you have JupytrHub as well as Python prepared, there is one last thing needed to get this system to function. Using the terminal, you will want to type:
+'pip install opencv-python'
+You will then hit enter. Upon doing so, JupytrHub will install the neccessary parts that is required for our system to function. You will know it has finished when the words 'Successfully installed' appear at the beginning of a line of text after running the command.
 
 <h1 align="center"><b>DEMO DRAFT</b></h1>
 The purpose of this network is to be able to give the system a picture of a Magic the Gathering (MtG) card and then have the system the

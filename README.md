@@ -24,10 +24,6 @@ Finally, once you have JupytrHub as well as Python prepared, there is one last t
 <hr>
 Once all of this is completed, please continue to the 'demo' folder found within this repository. From there, there will be a step-by-step process to show you how this system works from beginning to end. Thank you and we hope you enjoy our project!
 
-<h1 align="center"><b>DEMO DRAFT</b></h1>
-The purpose of this network is to be able to give the system a picture of a Magic the Gathering (MtG) card and then have the system the
-name of the card to the user. To accomplish this, we have set up several parts to create the current version of the system to do this task.<br>
-
 <h3 align="center"><b>Parts of Network</b></h3>
 
 <b><i>Card File:</i></b> This data file contains over 30,000 unique MtG cards. Each entry has the given card's name, the set that card was

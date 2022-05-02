@@ -20,3 +20,28 @@ In practice with the neural net, extracted images are passed directly to the Ima
 <p align=center>This concludes the demo on the Image Extractor.</p>
 
 <h2><b>Image Reader</b></h2>
+At the beginning of the Image Reader is the Image Extractor. So if you followed the previous demo, you already know how the beginning of the main code for the reader will work.<br>
+<br>
+The first block sets up the libraries required to run the system. Then, on the second block of code, it collects the .csv file containing the image file paths and names of each corresponding card.<br>
+<br>
+After the .csv and libraries have been prepared, the third block is the Image Extractor itself, where it prepares the real life images for later.<br>
+<br>
+Next, we are going to build an array of the clean images. All 30,000 MtG card images are prepared at a pixel size of 250x300 to be passed in to the neural net later. Then, on the next code block, it tests the array to ensure that the images are set up correctly.<br>
+<br>
+After defining a function called list_2D, which assists the network for the next couple of code blocks, the function for the encoder is created. This encoder effectively turns a name comprised of characters, numbers, and symbols into rows of 1's and 0's so that the system can better read and organize the data being used.<br>
+<br>
+Once the cards are encoded, it checks each card name in the .csv to make sure they can all fit within the given number of MAX Characters determined in the Encoder (which for out network is 36). Whatever card names exceed 36 characters are pushed out of the array of cards so that it will not create an issue during the model.<br>
+<br>
+Next, the decoder is defined. This takes the rows of 1's and 0's back into a readable name once the model is done with them so that the user can effectively read it properly. The following code block gives an example of this by outputting 'Wall of Roots' from the decoder.<br>
+<br>
+With the data generator, it takes the large list of image arrays and labels that match withthem, and then splits them into two groups to help train the neural network. This is the final step required before the neural network itself is constructed and compiled.<br>
+<br>
+Now that everything has been set up and prepared, it is time to beuild the neural net itself. We start by creating the model, making a network with multiple hidden layers that take in the images found within the array and scan each one by a small group of pixels at a time until the entire image has been scanned and studied.<br>
+<br>
+After constructing the network, you compile it by beginning the training. It goes through multiple rounds of training, picking groups of images to run through each round which are called 'epochs.' These epochs help calculate and show the percentage of how often the network was accurate in inputing the card's name versus how often it did not successfully name the card.<br>
+<br>
+After all the epochs are completed, it outputs a graph showing the progres of accuracy and loss over the course of the entire training. Following this, we test to see if the system can properly pull out a image of a real life photo of a MtG card after it has been extracted.<br>
+<br>
+Finally, at the end of the system, it attempts to read the card from the real life image and output the name that it believes the image is displaying.<br>
+<br>
+<p align=center>This concludes the demo on the Image Reader.</p>

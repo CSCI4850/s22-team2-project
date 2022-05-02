@@ -26,7 +26,7 @@ The first block sets up the libraries required to run the system. Then, on the s
 <br>
 After the .csv and libraries have been prepared, the third block is the Image Extractor itself, where it prepares the real life images for later.<br>
 <br>
-Next, we are going to build an array of the clean images. All 30,000 MtG card images are prepared at a pixel size of 250x300 to be passed in to the neural net later. Then, on the next code block, it tests the array to ensure that the images are set up correctly.<br>
+Next, we are going to build an array of the clean images. All 30,000 MtG card images are prepared at a pixel size of 250x300 to be passed in to the neural net later. Then, on the next code block, it tests the array to ensure that the images are set up correctly. This piece of the code will take time, so be prepared to wait several minutes.<br>
 <br>
 After defining a function called list_2D, which assists the network for the next couple of code blocks, the function for the encoder is created. This encoder effectively turns a name comprised of characters, numbers, and symbols into rows of 1's and 0's so that the system can better read and organize the data being used.<br>
 <br>

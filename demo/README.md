@@ -1,4 +1,4 @@
-Here in the demo, we will break down our system into two parts; the Image Extractor and the Image Reader. We will walkthrough how to do both individually.<br><br>
+Here in the demo, we will break down our system into two parts; the Image Extractor and the Image Reader. We will walkthrough how to do both individually.<br>
 
 <h2><b>Image Extractor</b></h2>
 The Image Extractor takes any given image and crop/rotate it to a proper orientation. Once it has completed, it will send the resized image to the neural net to determine what card the image contains.<br>
@@ -11,5 +11,12 @@ Running the first box loads in libraries that the Extractor needs to function. T
 <br>
 The second box holds the extractor itself. When you run it, it will begin going through each of the 30 images found within the Pics folder. If the Pics folder is not on the same level as the Extractor, you will run into an error stating that <b><i>'NoneType' object has no attribute 'shape'</i></b>. You will need to get the Pics in the correct level and retry the Exractor code.<br>
 <br>
-Assuming Pics is set up correctly, the code will continue as intended. It will iterate through 30 real life images that have been prepared for this demo, detecting where in the image that the card is and extracting only the card from the entire image. It will then compare the width of the extracted image with the height. If the width is larger, it will rotate the card so that it is lined up vertically.
+Assuming Pics is set up correctly, the code will continue as intended. It will iterate through 30 real life images that have been prepared for this demo, detecting where in the image that the card is and extracting only the card from the entire image. It will then compare the width of the extracted image with the height. If the width is larger, it will rotate the card so that it is lined up vertically.<br>
+<br>
+For this demo, once the 30 images get completed, the extracted images a folder called Results will. If this folder does not already exist, the Extractor Demo will create a Results folder to store the extracted images into.<br>
+<br>
+In practice with the neural net, extracted images are passed directly to the Image Reader and no copies are saved. By doing this, both testing and training images are able to be passed to the neural net with the same sizes and parameters regardless of its source.<br>
+<br>
+<p align=center>This concludes the demo on the Image Extractor.</p>
 
+<h2><b>Image Reader</b></h2>
